@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Combinators</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Demo specifying difference between css combinators (>,+,~)</h1>
+    </header>
+
+    <div id="container">
+      <h3 class="com">1. Descendant Selector(space) :</h3>
+      <p id="detail">
+        A descendant selector in CSS is any selector with white space between
+        two selectors without a combinator specified in between. example: div p,
+        here all the paragraph under div can be styled at once.
+      </p>
+      <div class="box">
+        <h2 id="box1" class="bx">This is first sentence</h2>
+        <h2 id="box2" class="bx">This is second sentence</h2>
+        <h2 id="box3" class="bx">This is third sentence</h2>
+      </div>
+      <p>
+        The first sentence size is changed using descendant selector, here i
+        selected the sentence inside the box class using id of the sentence
+        separated by space
+      </p>
+
+      <h3 class="com">2. Child Selector(>) :</h3>
+      <p id="detail">
+        Child Selector is used to match all the elements which are child of a
+        specified element. It gives the relation between two elements. The
+        element > element selector selects those elements which are the children
+        of specific parent.
+      </p>
+      <div class="box">
+        <h2 id="box4" class="bx">This is first sentence</h2>
+        <h2 id="box5" class="bx">This is second sentence</h2>
+        <h2 id="box6" class="bx">This is third sentence</h2>
+      </div>
+      <p>
+        The second sentence size is changed using child selector, here i
+        selected the sentence inside the box class using the id of the sentence
+        separated by ">".
+      </p>
+
+      <h3 class="com">3. Adjacent Sibling Selector (+) :</h3>
+      <p id="detail">
+        It uses the plus (+) sign as the separator between the elements. It
+        matches the second element only when the element immediately follows the
+        first element, and both of them are the children of the same parent.
+      </p>
+      <div class="box">
+        <h2 class="bx">This is first sentence</h2>
+        <h2 class="bx">This is second sentence</h2>
+      </div>
+      <h2 class="bx">This is third sentence</h2>
+      <p>
+        The third sentence size and text align is changed using adjacent sibling
+        selector, here i selected the h2 element which is after div as the css
+        to modify, using the div element and the id of the sentence separated by
+        "+".
+      </p>
+
+      <h3 class="com">4. General Sibling Selector (~) :</h3>
+      <p id="detail">
+        The general sibling combinator (~) separates two selectors and matches
+        all iterations of the second element, that are following the first
+        element, and are children of the same parent element.
+      </p>
+      <div class="box">
+        <h2 class="bx">This is first sentence</h2>
+      </div>
+      <h2 class="bx">This is second sentence</h2>
+      <h2 class="bx">This is third sentence</h2>
+      <p>
+        The second and third sentence size and text align is changed using
+        general sibling selector, here i selected the h2 element which is after
+        div as the css to modify, using the div element and the id of the
+        sentence separated by "~".
+      </p>
+    </div>
+  </body>
+</html>

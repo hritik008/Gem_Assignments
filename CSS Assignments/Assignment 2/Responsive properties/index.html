@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>1.Responsive Properties</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Demo specifying the difference between rem,em,vh,vw,px.</h1>
+    </header>
+
+    <div id="container">
+      <h2 class="res">1. rem-</h2>
+      <p id="detail">
+        Font-size gets set according to the font-size of the root element.In
+        general the html is the root element. In rem "r" stands for root.
+      </p>
+      <div class="box">
+        <h2 id="box1" class="bx">This is first sentence</h2>
+        <h2 id="box2" class="bx">This is second sentence</h2>
+        <h2 id="box3" class="bx">This is third sentence</h2>
+      </div>
+      <p>
+        "In the browser, you can see that the font size of the first heading has
+        changed from 10px to 40px because 4rem is equal to 4 times the root
+        element."
+      </p>
+
+      <h2 class="res">2. em-</h2>
+      <p id="detail">
+        Font-sizes are inherited relative to the parent element. 10em means ten
+        times of the parent element.
+      </p>
+      <div class="boxes">
+        <h2 id="box4" class="bx1">This is first sentence</h2>
+        <h2 id="box5" class="bx1">This is second sentence</h2>
+        <h2 id="box6" class="bx1">This is third sentence</h2>
+      </div>
+      <p>
+        "In the browser, you can see that the font-size of the second heading is
+        changed. Earlier the font-size was 10px because box5 inherited this size
+        from its parent element, i.e., boxes. Now, the font-size of box5 has
+        changed to 40px because 4em means four times of the parent element so
+        4*10=40px."
+      </p>
+
+      <h2 class="res">3. vh-</h2>
+      <p id="detail">
+        It stands for viewport height. vh is equal to the 1/100 times of the
+        viewport height. Example: Suppose height of the browser is 1000px, so
+        1vh is equaled to (1/100)*1000= 10px.
+      </p>
+      <div class="boxes1">
+        <h2 id="box7" class="bx2">This is first sentence</h2>
+        <h2 id="box8" class="bx2">This is second sentence</h2>
+        <h2 id="box9" class="bx2">This is third sentence</h2>
+      </div>
+      <p>
+        "100vh takes the entire height of the viewport. Benefit of this is that
+        you don't need to calculate the pixel that will be required to cover the
+        entire viewport or height of the the screen"
+      </p>
+
+      <h2 class="res">4. vw-</h2>
+      <p id="detail">
+        It stands for viewport width. Similar to vh, vw is equal to the 1/100
+        times of the viewport width. Example: Suppose width of the browser is
+        1000px, so 1vw is equaled to (1/100)*1000= 10px.
+      </p>
+      <div class="boxes2">
+        <h2 id="box10" class="bx3">This is first sentence</h2>
+        <h2 id="box11" class="bx3">This is second sentence</h2>
+        <h2 id="box12" class="bx3">This is third sentence</h2>
+      </div>
+      <p>
+        "100vw used here, you can see that the border's width is changed to 100%
+        of the viewport."
+      </p>
+
+      <h2 class="res">4. px-</h2>
+      <p id="detail">
+        The px stands for pixels. This is mostly designed for CSS and it is one
+        of the most used absolute length. Although it comes under absolute
+        lengths it’s length vary relative to the device types and that is the
+        reason, even W3C recommends to use the pixel unit for display screen.
+      </p>
+    </div>
+  </body>
+</html>

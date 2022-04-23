@@ -1,0 +1,60 @@
+* {
+  box-sizing: border-box;
+  padding: 0px;
+  margin: 0px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  background: linear-gradient(to right, #659999, #f4791f);
+}
+header {
+  top: 0;
+  width: 100%;
+  padding: 15px;
+  z-index: 1;
+}
+h1 {
+  text-align: center;
+  padding: 20px;
+  border: 4px solid black;
+  border-style: double;
+  background: linear-gradient(to right, #fc354c, #0abfbc);
+}
+
+#container {
+  margin: 20px;
+}
+#detail {
+  margin: 20px;
+}
+.com {
+  margin-top: 20px;
+  font-size: 30px;
+}
+
+/*Descendant Selector*/
+.box {
+  text-align: center;
+  margin: 10px;
+}
+.bx {
+  margin: 10px;
+}
+.box #box1 {
+  font-size: 40px;
+}
+
+/*Child Selector*/
+.box > #box5 {
+  font-size: 40px;
+}
+
+/*Adjacent Sibling Selector*/
+div + h2 {
+  font-size: 40px;
+  text-align: center;
+}
+
+/*General Sibling Selector*/
+div ~ h2 {
+  font-size: 40px;
+  text-align: center;
+}
