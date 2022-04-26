@@ -53,12 +53,15 @@
         /><br /><br />
 
         <label for="Gender" class="text">Gender :</label>
-        <input type="radio" id="gen1" />Male
-        <input type="radio" id="gen2" />Female
-        <input type="radio" id="gen3" />Other<br /><br />
+        <input type="radio" name="gen" id="gen1" />Male
+        <input type="radio" name="gen" id="gen2" />Female
+        <input type="radio" name="gen" id="gen3" />Other<br /><br />
 
         <label for="DOB" class="text">Date Of Birth :</label>
-        <input type="date" id="dob" />(dd-mm-yy)<br /><br />
+        <input type="number" min="1" max="31"> -
+        <input type="number" min="1" max="12"> -
+        <input type="number" min="1000" max="3000"> (dd-mm-yyyy)<br><br>
+
 
         <label for="Address" class="text">Address :</label>
         <input
